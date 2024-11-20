@@ -13,10 +13,18 @@
         <action
             android:id="@+id/action_firstFragment_to_grabadoraFragment"
             app:destination="@id/grabadoraFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_camera"
+            app:destination="@id/camera" />
     </fragment>
     <fragment
         android:id="@+id/grabadoraFragment"
         android:name="com.jose.aplicacionfinalkotlin.view.GrabadoraFragment"
         android:label="fragment_grabadora"
         tools:layout="@layout/fragment_grabadora" />
+    <activity
+        android:id="@+id/camera"
+        android:name="com.jose.aplicacionfinalkotlin.Camera"
+        android:label="activity_camera"
+        tools:layout="@layout/activity_camera" />
 </navigation>

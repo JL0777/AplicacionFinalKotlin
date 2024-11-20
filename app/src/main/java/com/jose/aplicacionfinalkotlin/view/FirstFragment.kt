@@ -24,10 +24,16 @@ class FirstFragment : Fragment() {
         val root=inflater.inflate(R.layout.fragment_first, container, false)
 
         val btnGrabadora=root.findViewById<Button>(R.id.btnGrabadora)
+        val btnCamara=root.findViewById<Button>(R.id.btnCamara)
+
 
         btnGrabadora.setOnClickListener{
             findNavController().navigate(R.id.action_firstFragment_to_grabadoraFragment)
         }
+        btnCamara.setOnClickListener{
+            findNavController().navigate(R.id.action_firstFragment_to_camera)
+        }
+
         return root
         }
 
