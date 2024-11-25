@@ -25,6 +25,7 @@ class FirstFragment : Fragment() {
 
         val btnGrabadora=root.findViewById<Button>(R.id.btnGrabadora)
         val btnCamara=root.findViewById<Button>(R.id.btnCamara)
+        val btnRoom=root.findViewById<Button>(R.id.btnRoom)
 
 
         btnGrabadora.setOnClickListener{
@@ -32,6 +33,9 @@ class FirstFragment : Fragment() {
         }
         btnCamara.setOnClickListener{
             findNavController().navigate(R.id.action_firstFragment_to_camera)
+        }
+        btnRoom.setOnClickListener {
+            findNavController().navigate(R.id.action_firstFragment_to_contactFormFragment)
         }
 
         return root
